@@ -16,7 +16,6 @@ import { MapComponent } from '../components/map/map';
 import { PusherProvider } from '../providers/pusher/pusher';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Geofence } from '@ionic-native/geofence';
-import { GeocodeProvider } from '../providers/geocode/geocode';
 import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notification';
 
 @NgModule({
@@ -42,7 +41,6 @@ import { PhonegapLocalNotification } from '@ionic-native/phonegap-local-notifica
     PusherProvider,
     HttpClient,
     Geofence,
-    GeocodeProvider,
     PhonegapLocalNotification,
   ],
 })
