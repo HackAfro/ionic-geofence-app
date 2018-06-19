@@ -1,0 +1,24 @@
+agm-map {
+  width: 100%;
+  height: 100%;
+}
+
+ion-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #adc1b9;
+  border-radius: 50%;
+
+  ion-icon {
+    font-size: 2.2em;
+    color: whitesmoke;
+  }
+}
+
+.no-notifications {
+  font-size: 14px;
+  color: deepskyblue;
+  text-transform: uppercase;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+<ion-header>
+  <div padding>
+    <ion-segment [(ngModel)]="tab">
+      <ion-segment-button value="location">
+        Position
+      </ion-segment-button>
+      <ion-segment-button value="notifications">
+        Notifications
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="tab" style="height: 100%">
+    <div *ngSwitchCase="'location'" style="height: 100%">
+      <map [center]="center"></map>
+    </div>
+    <div *ngSwitchCase="'notifications'" class="notifications-holder">
+      <h4 class="no-notifications" *ngIf="!notifications.length">No notifications to display</h4>
+      <ion-list *ngIf="notifications.length">
+        <ion-item *ngFor="let notification of notifications">
+          <ion-thumbnail item-start>
+            <ion-icon name="person"></ion-icon>
+          </ion-thumbnail>
+          <h2>{{notification.header}}</h2>
+          <p>{{notification.body}}</p>
+        </ion-item>
+      </ion-list>
+    </div>
+  </div>
+</ion-content>

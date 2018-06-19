@@ -1,3 +1,35 @@
 page-home {
+  ion-content {
+    position: relative;
+    agm-map {
+      height: 100%;
+      width: 100%;
+    }
+    .location-address {
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      background: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 23px 10px;
 
+      p{
+        font-size: 20px;
+        opacity: .7;
+        font-weight: bold;
+        letter-spacing: .2px;
+        margin-bottom: 4px;
+      }
+
+      h4{
+        font-size: 14px;
+        opacity: 0.4;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+  }
 }
