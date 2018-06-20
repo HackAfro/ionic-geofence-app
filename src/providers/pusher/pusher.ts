@@ -13,7 +13,7 @@ export class PusherProvider {
   pusher;
 
   public init(channelName) {
-    const channel = this.pusher.subscribe('channel');
+    const channel = this.pusher.subscribe(channelName);
     return channel;
   }
 }

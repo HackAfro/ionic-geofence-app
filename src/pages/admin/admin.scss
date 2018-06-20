@@ -9,6 +9,8 @@ ion-thumbnail {
   justify-content: center;
   background: #adc1b9;
   border-radius: 50%;
+  min-width: 50px !important;
+  min-height: 50px !important;
 
   ion-icon {
     font-size: 2.2em;
